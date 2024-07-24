@@ -40,7 +40,10 @@ services:
 networks:
     mongo-network:
         driver: bridge
+<<<<<<< HEAD:compose.yaml
 
 volumes:
     mongodb-config:
     mongodb-data:
+=======
+>>>>>>> a2782df939e273f84cd47a138b9db4c8c61a5372:docker-compose.yaml
