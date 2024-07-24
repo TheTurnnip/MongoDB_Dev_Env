@@ -11,8 +11,8 @@ services:
             - MONGO_INITDB_DATABASE=test_db
             - HOME=/data/db
         volumes:
-            - /data/configdb
-            - /data/db
+            - mongodb-config:/data/configdb
+            - mongodb-data:/data/db
         networks:
             - mongo-network
         ports:
@@ -40,3 +40,7 @@ services:
 networks:
     mongo-network:
         driver: bridge
+
+volumes:
+    mongodb-config:
+    mongodb-data:
